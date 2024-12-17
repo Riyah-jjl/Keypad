@@ -66,13 +66,13 @@ void loop() {
         // Vérifie si la saisie correspond au mot de passe
         if (strcmp(saisieUtilisateur, motDePasse) == 0) {
           // Mot de passe correct
-          Serial.println("Mot de passe correct ! Bienvenue !");
+          Serial.println("Mot de passe correct ! Bienvenue !\n");
           digitalWrite(LED_VERTE, HIGH); // Allume la LED verte
           delay(2000); // Garde la LED verte allumée pendant 2 secondes
           digitalWrite(LED_VERTE, LOW); // Éteint la LED verte
         } else {
           // Mot de passe incorrect
-          Serial.println("Mot de passe incorrect. Réessayez !");
+          Serial.println("Mot de passe incorrect. Réessayez !\n");
         }
 
         // Réinitialise la saisie pour un nouveau cycle
@@ -161,13 +161,13 @@ void loop() {
         // Vérifie si la saisie correspond au mot de passe
         if (strcmp(saisieUtilisateur, motDePasse) == 0) {
           // Mot de passe correct
-          Serial.println("Mot de passe correct ! Bienvenue !");
+          Serial.println("Mot de passe correct ! Bienvenue !\n");
           digitalWrite(LED_VERTE, HIGH); // Allume la LED verte
           delay(2000); // Garde la LED verte allumée pendant 2 secondes
           digitalWrite(LED_VERTE, LOW); // Éteint la LED verte
         } else {
           // Mot de passe incorrect
-          Serial.println("Mot de passe incorrect. Réessayez !");
+          Serial.println("Mot de passe incorrect. Réessayez !\n");
         }
 
         // Réinitialise la saisie pour un nouveau cycle
@@ -258,19 +258,19 @@ void loop() {
         // Vérifie si la saisie correspond au mot de passe
         if (strcmp(saisieUtilisateur, motDePasse) == 0) {
           // Mot de passe correct
-          Serial.println("Mot de passe correct ! Bienvenue !");
+          Serial.println("Mot de passe correct ! Bienvenue !\n");
           digitalWrite(LED_VERTE, HIGH); // Allume la LED verte
           delay(2000); // Garde la LED verte allumée pendant 2 secondes
           digitalWrite(LED_VERTE, LOW); // Éteint la LED verte
           tentativesRatees = 0; // Réinitialise les tentatives ratées
         } else {
           // Mot de passe incorrect
-          Serial.println("Mot de passe incorrect. Réessayez !");
+          Serial.println("Mot de passe incorrect. Réessayez !\n");
           tentativesRatees++; // Incrémente le compteur d'erreurs
 
           // Si 3 erreurs consécutives
           if (tentativesRatees >= 3) {
-            Serial.println("3 tentatives échouées. Veuillez patienter 5 secondes.");
+            Serial.println("3 tentatives échouées. Veuillez patienter 5 secondes.\n");
             digitalWrite(LED_ROUGE, HIGH); // Allume la LED rouge
             delay(5000); // Attend 5 secondes
             digitalWrite(LED_ROUGE, LOW); // Éteint la LED rouge
@@ -287,4 +287,3 @@ void loop() {
     }
   }
 }
-
