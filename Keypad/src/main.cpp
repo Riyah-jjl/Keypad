@@ -3,7 +3,7 @@
 
 
 /*
-EXERCICE 2
+//EXERCICE 2
 
 // Dimensions du clavier : 4 lignes et 4 colonnes
 const byte ROWS = 4;
@@ -98,7 +98,7 @@ void loop() {
 
 
 /*
-EXERCICE 3
+//EXERCICE 3
 
 // Dimensions du clavier : 4 lignes et 4 colonnes
 const byte ROWS = 4;
